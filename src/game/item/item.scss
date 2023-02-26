@@ -1,0 +1,57 @@
+#container-items {
+    div {
+        background-color: var(--coin-color);
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        
+    }
+    
+    .coin {
+        background-image: url('../../assets/star-solid.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: transparent;
+    }
+    .bomb {
+        background-image: url('../../assets/bomb-solid.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: transparent;
+    }
+
+    .powerupspeed {
+        background-image: url('../../assets/forward-solid.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: transparent;
+    }
+
+    .powerdownspeed {
+        background-image: url('../../assets/backward-solid.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: transparent;
+    }
+
+    .powerupinvincible {
+        background-image: url('../../assets/shield-solid.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: transparent;
+    }
+
+    .powerupmagnet {
+        background-image: url('../../assets/magnet-solid.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: transparent;
+    }
+
+    .poweruptime {
+        background-image: url('../../assets/stopwatch-solid.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: transparent;
+    }
+}

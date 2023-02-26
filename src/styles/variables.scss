@@ -1,0 +1,29 @@
+:root{
+
+    /* Colors */
+    --kirby-body-color: #ee8bb1;
+    --kirby-feet-color: #d90e46;
+    --kirby-cheeks-color:#f875a8;
+    --game-over-background-color: rgba(0, 0, 0, 0.5);
+    --black-color: black;
+    --white-color: white;
+    --coin-color: #f1c40f;
+    --bomb-color: #e74c3c;
+    --powerup-up-speed-color: #7fe7f3;
+    --powerup-down-speed-color: #3498db;
+    --powerup-invincible-color: #2ecc71;
+    --powerup-magnet-color: #9b59b6;
+    --powerup-up-time-color: #f39c12;
+
+    /* Typography */
+    --base-font-family: 'Chakra Petch', sans-serif;
+    --small-font-size: 1.2rem;
+    --body-font-size: 1.5rem;
+    --middle-font-size: 1.5rem;
+    --middle-secondary-font-size: 3.5rem;
+    --big-font-size: 5rem;
+    --extra-font-size: 7rem;
+
+    /* Buttons */
+    --button-border-radius: 60px;
+}

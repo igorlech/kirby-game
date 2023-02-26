@@ -1,0 +1,10 @@
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(75, 63, 251, 1) 0%, rgba(83, 147, 188, 1) 50%, rgba(70, 233, 252, 1) 100%);
+    z-index: -1;
+    box-shadow: inset 0px 0px 200px 200px rgba(255, 0, 0, 0.75);
+}

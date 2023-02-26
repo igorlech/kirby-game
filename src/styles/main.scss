@@ -1,0 +1,131 @@
+body {
+    overflow: hidden;
+}
+
+/* Game over screen */
+
+.gamescreen, .start-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--game-over-background-color);
+    z-index: 100;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--white-color);
+    font-family: var(--base-font-family);
+}
+
+.start-screen {
+    display: flex;
+}
+
+h1 {
+    font-size: var(--extra-font-size);
+    text-transform: uppercase;
+}
+
+.game-over-btn, .btn-game-start {
+    cursor: pointer;
+    font-size: var(--middle-font-size);
+    color: var(--white-color);
+    text-transform: uppercase;
+
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.3rem;
+    border: none;
+    border-radius: var(--button-border-radius);
+    background-color: var(--kirby-feet-color);
+
+    &:hover {
+        transition: 0.2s;
+        background-color: var(--kirby-feet-color);
+    }
+}
+
+/* Score display */
+
+.score-display {
+    display: none;
+    position: absolute;
+    top: 0;
+    padding: 1rem;
+    color: var(--white-color);
+    font-family: var(--base-font-family);
+    font-size: var(--middle-secondary-font-size);
+    text-align: right;
+    z-index: 100;
+}
+
+.timer-wrapper {
+    width: 100vw;
+    position: absolute;
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+#timer {
+    padding: 1rem;
+    color: var(--white-color);
+    font-family: var(--base-font-family);
+    font-size: var(--middle-secondary-font-size);
+}
+
+.winner-input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    label {
+        font-size: var(--body-font-size);
+        margin-bottom: 0.7rem;
+    }
+}
+
+.winner-input {
+    display: flex;
+    flex-direction: row;
+    font-size: var(--small-font-size);
+
+    input {
+        padding: 10px 20px;
+        width: 330px;
+        border: none;
+    }
+
+    button {
+        background-color: var(--kirby-feet-color);
+        color: var(--white-color);
+        border: none;
+        padding: 0.2rem 0.7rem;
+        cursor: pointer;
+    }
+}
+
+.leaderboard {
+    font-size: var(--body-font-size);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.leaderboard-table {
+    padding: 0.5rem;
+    width: 40rem;
+    text-align: center;
+}
+
+.winner-time {
+    font-size: var(--middle-secondary-font-size);
+    margin-bottom: 1rem;
+}
