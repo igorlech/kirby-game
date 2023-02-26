@@ -11,15 +11,15 @@ import { Leaderboard } from './leaderboard';
 
 export class Game {
     private navigation: INavigation;
-    private keyboardNavigation : KeyboardNavigation;
+    private keyboardNavigation: KeyboardNavigation;
     private player: IPlayer;
     private playerObject: Player;
     private background: IMovable;
     private itemsArea: DOMRect;
-    private defaultItems : Array<DefaultItem>;
-    private randomItems : Array<RandomItem>;
-    private audioManager : AudioManager;
-    private leaderboard : Leaderboard;
+    private defaultItems: Array<DefaultItem>;
+    private randomItems: Array<RandomItem>;
+    private audioManager: AudioManager;
+    private leaderboard: Leaderboard;
     private gameFinished = true;
     private timer = 600;
     private timeLeft = this.timer;
@@ -165,7 +165,7 @@ export class Game {
     private checkIfItemsAreCollected() {
         const defaultItemsCoins = this.defaultItems.filter((x) => x.itemType === EnumDefaultItem.Coin);
 
-        if (defaultItemsCoins.length === 14) {
+        if (defaultItemsCoins.length === 0) {
             this.gameWon();
         }
     }
@@ -235,7 +235,7 @@ export class Game {
         // TODO: Restart the game instead of reloading the page.
         window.location.reload();
     }
-    
+
     private displayScore(): void {
         const score = document.querySelector('.winner-time');
         score.innerHTML = `Your time: ${(this.timer - this.timeLeft) / 10}s`;
