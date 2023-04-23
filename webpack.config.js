@@ -20,6 +20,7 @@ const config = {
     output: {
         path: path.resolve(__dirname, './wwwroot'),
         chunkFilename: '[chunkhash].js',
+        publicPath: '/kirby-game/',
     },
     devServer: {
         open: true,
@@ -63,9 +64,6 @@ const config = {
 };
 
 module.exports = () => {
-
-
-
     if (!isLocalhost) {
         config.plugins.push(
             new MiniCssExtractPlugin({
