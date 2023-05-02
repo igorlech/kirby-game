@@ -18,7 +18,7 @@ export class RandomItem extends Item {
         this.elem.classList.add(EnumRandomItem[itemType].toLowerCase());
     }
 
-    public speedUp(speed = 10) {
+    public speedUp(speed = 6) {
         if (this.effectDuration > 0) {
             this.effectDuration--;
             this.player.speed = speed;

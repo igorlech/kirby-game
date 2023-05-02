@@ -1,7 +1,7 @@
 import './player.scss';
 import { Direction, IPlayer } from '../interfaces';
 
-const SPEED = 5;
+const SPEED = 3;
 const BOUNDARY = 20;
 const PLAYER_SIZE = 80;
 
